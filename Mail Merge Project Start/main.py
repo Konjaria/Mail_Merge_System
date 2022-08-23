@@ -40,5 +40,5 @@ with open(INPUT_DIRECTORY) as letter_file:
     for name in names:
         stripped_name = name.strip()
         new_letter = letter_contents.replace(search_text, stripped_stripped_name)
-        with open(f"./Output/ReadyToSend/invited_to_a_party_{stripped_name}", 'w') as final_letter:
+        with open(f"./Output/ReadyToSend/invited_to_a_party_{stripped_name}.txt", 'w') as final_letter:
             final_letter.write(new_letter)
